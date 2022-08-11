@@ -1,5 +1,6 @@
 # King County House Sales Data Analysis
 ________________
+![King_County_Logo](https://github.com/kevgross89/dsc-phase-2-project-v2-3/blob/main/Images/King%20County%20Housing%20Logo.jpg)
 
 Author: Kevin Gross
 
