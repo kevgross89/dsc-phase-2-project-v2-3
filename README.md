@@ -30,19 +30,17 @@ Obviously, this model has some flaws as it is possible (although not probable) t
 
 Our second linear regression model adds in significantly more coefficients to help better predict the house price. For the second model, we add in the variables of bedrooms, bathrooms, square footage of the lot, number of floors, the year the house was built and the numeric grade the house received (index from 1 to 13, where 1-3 falls short of building construction and design, 7 has an average level of construction and design, and 11-13 have a high quality level of construction and design). This second model gives us an r-squared value of 0.614, which is a 12% improvement from our baseline model. The simplest way to interpret this model is below:
 
-* Predicted House Price = Square Footage of House * 191 - Number of Bedrooms * 48450 + Number of Bathrooms * 51160 - Square Footage of Lot * .24 + Number of Floors * 17180 - Year Built * 4171 + Numeric Grade * 132500 + 7383000
+* Predicted House Price = (Square Footage of House 191) - (Number of Bedrooms 48454) + (Number of Bathrooms 51156) - (Square Footage of Lot .24) + (Number of Floors 17181) - (Year Built 4171) + (Numeric Grade * 132477) + 7382644
 
 The third linear regression model adds in categorical features, such as whether the house is a waterfront property or not. Our r-squared model increased to 0.644, which is a 3% improvement from our second model above. While this model is the most accurate in predicting a house price, it is also complicated to understand.
 
-* Predicted House Price = Square Footage of House * 180 - Number of Bedrooms * 42310 + Number of Bathrooms * 46440 - Square Footage of Lot * .22 + Number of Floors * 21530 - Year Built * 3835 + Numeric Grade * 131300 - Fair Condition (Y/N) * 2698 + Good Condition (Y/N) * 13470 + Poor Condition (Y/N) * 12330 + Very Good Condition (Y/N) * 51650 + Waterfront (Y/N) * 780000 + 6724000
+* Predicted House Price = (Square Footage of House 180) - (Number of Bedrooms 42312) + (Number of Bathrooms 46440) - (Square Footage of Lot .22) + (Number of Floors 21534) - (Year Built 3835) + (Numeric Grade 131265) - (Fair Condition (Y/N) 2698) + (Good Condition (Y/N) 13468) + (Poor Condition (Y/N) 12326) + (Very Good Condition (Y/N) 51646) + (Waterfront (Y/N) 780006) + 6723548
 
 The fourth model aims to keep the r-squared score as high as possible, while also simplifying the model. This model decreases the number of dependent variables from 13 to 7, while keeping our r-squared score at 0.642 which is only a 0.2% decrease in the amount of variation explained by our model. 
 
-* Predicted House Price = Square Footage of House * 175 - Number of Bedrooms * 41070 + Number of Bathrooms * 54700 - Year Built * 3929 + Numeric Grade * 133300 + Waterfront (Y/N) * 779500 + 6917000
+* Predicted House Price = (Square Footage of House 175) - (Number of Bedrooms 41073) + (Number of Bathrooms 54699) - (Year Built 3929) + (Numeric Grade 133251) + (Waterfront (Y/N) 779549) + 6917330
 
 Unfortunately, while this model is the most accurate, it also does not meet the 4 assumptions of linear regression. To fix this issue, we can log and standardize some of our features in order to normalize our regression results. After applying these transformations, we have a model that comes back with a r-squared value of 0.634 and meets all 4 assumptions of linear regression.
-
-* 
 
 ## Conclusion
 
