@@ -48,6 +48,8 @@ The fourth model aims to keep the r-squared score as high as possible, while als
 
 Unfortunately, while this model is the most accurate, it also does not meet the 4 assumptions of linear regression. To fix this issue, we can log and standardize some of our features in order to normalize our regression results. After applying these transformations, we have a model that comes back with a r-squared value of 0.634 and meets all 4 assumptions of linear regression.
 
+![Tornado](https://github.com/kevgross89/dsc-phase-2-project-v2-3/blob/main/Images/Tornado.png)
+
 ## Business Recommendations
 
 When Berkshire Hathaway is talking to it's clients, it should recommend that clients do the below 2 things to their homes:
