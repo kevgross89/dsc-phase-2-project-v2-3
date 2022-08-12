@@ -42,7 +42,7 @@ The third linear regression model adds in categorical features, such as whether 
 
 * Predicted House Price = (Square Footage of House * 180) - (Number of Bedrooms * 42312) + (Number of Bathrooms * 46440) - (Square Footage of Lot * .22) + (Number of Floors * 21534) - (Year Built * 3835) + (Numeric Grade * 131265) - (Fair Condition (Y/N) * 2698) + (Good Condition (Y/N) * 13468) + (Poor Condition (Y/N) * 12326) + (Very Good Condition (Y/N) * 51646) + (Waterfront (Y/N) * 780006) + $6,723,548
 
-The fourth model aims to keep the r-squared score as high as possible, while also simplifying the model. This model decreases the number of dependent variables from 13 to 7, while keeping our r-squared score at 0.642 which is only a 0.2% decrease in the amount of variation explained by our model. 
+The fourth model aims to keep the r-squared score as high as possible, while also simplifying the model. This model decreases the number of dependent variables from 13 to 6, while keeping our r-squared score at 0.642 which is only a 0.2% decrease in the amount of variation explained by our model. 
 
 * Predicted House Price = (Square Footage of House * 175) - (Number of Bedrooms * 41073) + (Number of Bathrooms * 54699) - (Year Built * 3929) + (Numeric Grade * 133251) + (Waterfront (Y/N) * 779549) + $6,917,330
 
@@ -52,7 +52,7 @@ Unfortunately, while this model is the most accurate, it also does not meet the 
 
 ## Business Recommendations
 
-When Berkshire Hathaway is talking to it's clients, it should recommend that clients do the below 2 things to their homes:
+When Berkshire Hathaway is talking to it's clients, it should recommend that clients do the below 3 things to their homes:
 
 * The best way to increase the value of one's home is to increase the Numeric Grade. This is indicated by an index from 1 to 13, where 1-3 falls short of building construction and design, 7 has an average level of construction and design, and 11-13 have a high quality level of construction and design. Since this is on a scale of 1 to 13, **if we increase our Numeric Grade by 1 notch (1/13 = 7.69%), we would expect the value of our home to increase by 4.2%** (formula: (1.0769<sup>0.5511</sup> - 1) * 100 = 4.2%).
 * Another way to increase the value of one's home is to increase the square footage of the house. **If we increase the square footage of the house by 20%, we could expect the value of the home to increase by 6.2%** (formula: (1.2<sup>0.3318</sup> - 1) * 100 = 6.2%).
