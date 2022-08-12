@@ -56,7 +56,8 @@ When Berkshire Hathaway is talking to it's clients, it should recommend that cli
 
 * The best way to increase the value of one's home is to increase the Numeric Grade. This is indicated by an index from 1 to 13, where 1-3 falls short of building construction and design, 7 has an average level of construction and design, and 11-13 have a high quality level of construction and design. Since this is on a scale of 1 to 13, **if we increase our Numeric Grade by 1 notch (1/13 = 7.69%), we would expect the value of our home to increase by 4.2%** (formula: (1.0769<sup>0.5511</sup> - 1) * 100 = 4.2%).
 * Another way to increase the value of one's home is to increase the square footage of the house. **If we increase the square footage of the house by 20%, we could expect the value of the home to increase by 6.2%** (formula: (1.2<sup>0.3318</sup> - 1) * 100 = 6.2%).
+* A third way to increase the value of one's home is to add more bathrooms. **If you add 1 bathroom to a 2.5 bathroom house (1/2.5 = 40%), you would expect the value of your home to increase by 4.4%** (formula: (1.4<sup>0.1289</sup> - 1) * 100 = 4.4%).
 
 ## Conclusion
 
-Berkshire Hathaway can use this final model to help their customers predict the price of their home and also forecast the price of a home they intend to purchase. It should explain roughly 63% of the normal variation that happens in everyday life, which means that it is a relatively strong model. 
+Berkshire Hathaway can use this final model to help their customers predict the price of their home and also forecast the price of a home they intend to purchase. It should explain roughly 63% of the normal variation that happens in everyday life, which means that it is a relatively strong model. Additionally, they should recommend that their clients increase the Numeric Grade of their house, add square footage, or add additional bathrooms.
